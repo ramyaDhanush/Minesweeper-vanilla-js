@@ -6,16 +6,22 @@
   <title>Minesweeper</title>
   <link rel="stylesheet" href="style.css">
   </link>
-  <script src="app.js" charset="utf-8"></script>
+  <script type="text/javascript" src="app.js" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="grid"></div>
-    <div>Flags left: <span id='flags-left'></span></div>
-    <div id="result"></div>
+  <div class="layout" background-image="#263532">
+    <h1 >Minesweeper</h1>
+    <div class="container">
+      <div class="grid"></div>
+      <div class="w-color">Flags left: <span id='flags-left'></span></div>
+      <div id="result"></div>
+      
+      <div id="restart">
+        <button id="restart-game" class="btn-primary">Restart</button>
+      </div>
+    </div>
   </div>
 
 </body>

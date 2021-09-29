@@ -1,6 +1,38 @@
+body, html {
+  height: 100vh;
+  width: 100VW;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  
+  background-image: url("img/main_background.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  overflow: hidden;
+}
 .container {
   width: 500px;
   align-content: center;
+}
+
+.w-color {
+  color: hsl(48, 33%, 94%);
+  margin-top: 40px;
+  position: relative;
 }
 
 .grid {
@@ -10,7 +42,7 @@
   flex-wrap: wrap;
   background-color: #dcd6bc;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 10px solid #dcd6bc;
   margin-bottom: 10px;
 }
@@ -65,4 +97,22 @@ div {
 #result {
   margin-top: 5px;
   color: #e76346;
+  height: 35px;
+}
+
+h1 {
+  color: #e76346;
+  /* top: -30px; */
+  position: relative;
+}
+
+#restart-game {
+  margin-top: 6px;
+  padding: 8px;
+  border: 1px solid #9c998d;
+  background-color: #0f7c10;
+  border-radius: 3px;
+  color: #fff9db;
+  font-size: 20px;
+  cursor: pointer;
 }
